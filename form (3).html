@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9-B Declamation Web Blog</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            background-color: #f5f5dc;
+            color: #312821;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background: #5e4b3bce;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            background: #271a0eb9;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            padding: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border: 2px solid #5c4a39;
+            box-shadow: 5px 5px 10px #999;
+        }
+
+        .post {
+            padding: 15px;
+            border-bottom: 1px dashed #381b00d2;
+        }
+
+        .image-example {
+            width: 100%;
+            max-width: 600px; /* Keeps the images within margin */
+            border-radius: 15px; /* Rounded corners */
+            margin: 10px 0;
+            border: 4px solid #5c4a39; /* Border shape */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-example:hover {
+            transform: scale(1.05); /* Image zoom effect */
+        }
+
+        footer {
+            background: #3a3836;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DECLAMATION WEBLOG</h1>
+        <p> welcome to my declamation blog!</p>
+        <p>Words have power—they inspire, move, and leave a lasting impact. 
+        Here, I celebrate the art of declamation, where speech meets passion and performance.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article class="post">
+            <h2>JANUARY 25, 2025</h2>
+            <p class="date">Good afternoon, Sir Myke! I am Aubrey Dyril D. Tagadtad sharing my experience/s
+                during our declamation program.
+            <p>
+                Our declamation experience was fun yet exhausting. We practiced tirelessly to deliver a perfect performance for the audience. 
+                In the end, all our efforts were worth it—they loved our performance, and I felt happy and grateful as we received an emotional 
+                round of applause. </p>
+
+            <p>
+                Our performance was inspired by Pulang Araw and Maria Clara. It depicted the suffering of people during the war, as the Japanese 
+                attacked the Philippines, and the betrayals they experienced from their supposed allies. </p>
+
+            <p>    
+                We poured our emotions into the performance, with anger and sadness as the dominant themes. 
+                We shouted, cried, and symbolized the strength of those who survived the war. </p>
+
+            <p>
+                Backstage, we struggled to set up our props, but thankfully, everything was delivered to the stage on time. We also brought our costumes,
+                and since I played two characters, it was a challenge to change outfits quickly. </p>
+
+            <p>
+               In the end, our roleplay successfully conveyed the horrors of war to the audience. 
+               Our advisor and teachers were proud of us for creating a performance that was both exquisite and iconic. </p>
+
+
+               
+
+
+            </p>
+            <p>.</p>
+        </article>
+
+        <article class="post">
+            <h2> GIVING THANKS TO:</h2>
+            <p class="date"> PERFORMING ARTS</p>
+            <p> Im grateful to the Performing Arts group for carrying the program by showcasing their 
+                creative dances to entertain the audience while they waited for the program to begin. </p>
+            <img src="performing arts.jpg" alt="performing arts" class="image-example">
+
+            <p class="date"> CLASSMATES</p>
+            <p>I sincerely thank my classmates for playing their roles well and delivering a detailed and powerful
+                 portrayal of war. I hope all their efforts will be more recognized, and Im grateful to have them 
+                 as my classmates. A special thanks to Faith, Chelsea, and Queen Domingo for leading the class during our 
+                 practices, even when some classmates were not paying attention.</p>
+           <img src="classmate.jpg" alt="classmate" class="image-example">
+
+           <p class="date"> TEACHERS</p>
+           <p>I want to express my gratitude to the teachers who attended our program and watched our performance. 
+            Thank you for your unwavering support! </p>
+           <img src="teachers.jpg" alt="teachers" class="image-example">
+
+           <p class="date"> ADVISOR</p>
+           <p> Lastly, to our most beloved adviser, Maam Dess Gomez, I want to thank you for guiding us through this 
+            performance and helping us improve our acting to make it more meaningful. Thank you for giving us hope,
+             happiness, and motivation to keep going!</p>
+          <img src="teacher dess.jpg" alt="teacher dess" class="image-example">
+           
+
+        
+
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Declamation blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+<script>
+    // JavaScript for smooth scrolling and hover effect on images
+    document.querySelectorAll('nav ul li a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const section = document.querySelector(this.getAttribute('href'));
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+
+    // Add fade effect on images when clicked
+    const images = document.querySelectorAll('.image-example');
+    images.forEach(image => {
+        image.addEventListener('click', () => {
+            image.style.opacity = 0.7;
+            setTimeout(() => {
+                image.style.opacity = 1;
+            }, 500);
+        });
+    });
+</script>
+</body>
+</html>
